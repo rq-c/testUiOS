@@ -33,5 +33,4 @@ En esta fase nuestra app se encuentra activa por lo cual se ejecuta el metodo ap
 
 
 __didFinishLaunchingWithOptions and viewDidLoad__
-El fondo se pintará de color amarillo, ya que el método viewDidLoad de nuestro ViewController se llama después de que la vista del controlador se carga en la memoria.
-Posterior a eso se ejecuta el método didFinishLaunchingWithOptions, que hace una restauración de los estados UI, cambiando colores, posición, etc.
+El fondo se pintará de color amarillo, ya que configuramos el RootViewController en nuestro método didFinishLaunchingWithOptions, esto hace que se inicialice nuestro ViewController antes de la ejecución del método "didFinishLaunchingWithOptions".
