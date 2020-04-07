@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="id_MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="MainViewController" customModule="testUiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sCX-6i-4be">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="609"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOn-fL-wsE">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <state key="normal" title="Enviar"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sCX-6i-4be" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0ey-w4-zuh"/>
+                            <constraint firstItem="tOn-fL-wsE" firstAttribute="top" secondItem="sCX-6i-4be" secondAttribute="bottom" constant="8" symbolic="YES" id="PYq-oW-06q"/>
+                            <constraint firstItem="sCX-6i-4be" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UAj-zw-qrZ"/>
+                            <constraint firstItem="sCX-6i-4be" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-58" id="YZl-Bu-8Ge"/>
+                            <constraint firstItem="sCX-6i-4be" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hE3-Q0-I0i"/>
+                            <constraint firstItem="tOn-fL-wsE" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="mfA-uc-sri"/>
+                            <constraint firstItem="tOn-fL-wsE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="q7p-70-eJa"/>
+                            <constraint firstItem="tOn-fL-wsE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xeu-Qv-veG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="sCX-6i-4be" id="FX6-zX-Dht"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="145" y="107"/>
+        </scene>
+    </scenes>
+</document>
